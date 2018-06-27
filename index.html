@@ -9,7 +9,71 @@
 <h1>Arrays</h1>
 <body>
     <script>
-    
+    const gotCitiesCSV = "King's Landing,Braavos,Volantis,Old Valyria,Free Cities,Qarth,Meereen";
+    const lotrCitiesArray = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+    const bestThing = "The best thing about a boolean is even if you are wrong you are only off by a bit"
+
+
+//Kata 1
+var kata1 = gotCitiesCSV.split(',');
+var kata1element = document.createElement("p");
+kata1element.textContent = JSON.stringify(kata1);
+document.body.appendChild(kata1element);
+
+//Kata 2
+var kata2 = bestThing.split(' ');
+var kata2element = document.createElement("p");
+kata2element.textContent = JSON.stringify(kata2);
+document.body.appendChild(kata2element);
+
+//Kata 3
+var kata3 = kata1.join(';');
+var kata3element = document.createElement("p");
+kata3element.textContent = JSON.stringify(kata3);
+document.body.appendChild(kata3element);
+
+//Kata 4
+var kata4 = lotrCitiesArray.join(', ');
+var kata4element = document.createElement("p");
+kata4element.textContent = JSON.stringify(kata4);
+document.body.appendChild(kata4element);
+
+//Kata 5
+var kata5 = [];
+for (var i = 3; i < 8; i++) {
+    var arrayitem = lotrCitiesArray[i];
+    kata5.push(arrayitem);
+}
+var kata5element = document.createElement("p");
+kata5element.textContent = JSON.stringify(kata5);
+document.body.appendChild(kata5element);    
+
+//Kata 6
+var kata6 = lotrCitiesArray
+kata6.splice(2, 1);
+var kata6element = document.createElement("p");
+kata6element.textContent = JSON.stringify(kata6);
+document.body.appendChild(kata6element);
+
+//Kata 7
+var kata7 = bestThing.slice(23, 38)
+var kata7element = document.createElement("p")
+kata7element.textContent = JSON.stringify(kata7)
+document.body.appendChild(kata7element)
+
+
+//Kata 8
+var kata8 = bestThing.slice(64,69)
+var kata8element = document.createElement("p");
+kata8element.textContent = JSON.stringify(kata8);
+document.body.appendChild(kata8element);
+
+
+//Kata 9
+var kata9 = gotCitiesCSV.indexOf("aa");("ee");("oo");("ii");    
+var kata9element = document.createElement(kata9);
+kata9element.textContent = JSON.stringify(kata9);
+document.body.appendChild(kata9element);
     </script>
 </body>
 </html>
