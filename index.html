@@ -63,17 +63,38 @@ document.body.appendChild(kata7element)
 
 
 //Kata 8
-var kata8 = bestThing.slice(64,69)
+var kata8 = bestThing.indexOf("only")
 var kata8element = document.createElement("p");
 kata8element.textContent = JSON.stringify(kata8);
 document.body.appendChild(kata8element);
 
 
 //Kata 9
-var kata9 = gotCitiesCSV.indexOf("aa");("ee");("oo");("ii");    
-var kata9element = document.createElement(kata9);
-kata9element.textContent = JSON.stringify(kata9);
-document.body.appendChild(kata9element);
+let kata9 = kata1
+var NewArray = [];
+
+for ( var i = 0; i < kata9.length; i++) {
+    if (kata9[i].includes("aa") || kata9[i].includes("ee") ||kata9[i].includes("ii") ||
+    kata9[i].includes("oo") ||kata9[i].includes("uu")) {
+NewArray.push(kata9[i]);
+
+    }
+}
+document.write(JSON.stringify(NewArray))
+
+
+//Kata 10
+let kata10 = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+kata10.sort(function(a, b){
+    return a.length - b.length
+});
+var kata10element = document.createElement("p")
+kata10element.textContent = JSON.stringify(kata10)
+document.body.appendChild(kata10element)
+
+
+
+
     </script>
 </body>
 </html>
